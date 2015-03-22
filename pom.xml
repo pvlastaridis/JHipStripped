@@ -16,7 +16,7 @@
 	<packaging>war</packaging>
 
 	<name>jhipstripped</name>
-	<description>Jhipster Step 1. Let's make a REST Controller</description>
+	<description>Jhipster Step 2. Let's add logback</description>
 
 	<prerequisites>
 		<maven>3.0.0</maven>

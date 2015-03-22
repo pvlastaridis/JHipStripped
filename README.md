@@ -18,5 +18,12 @@ Commit 2.
 	Alter POM to look more jhipster style and also add yaml and inject dependency so we can have yml properties and @Inject Annotation
 	Rename Main Class and Servlet Initializer Class to match Jhipster's accordingly
 	Add a resource class (A rest controller) so at the moment our app can speak to the world.\
+	OK So far we have a rest controller in embedded Tomcat and we can alter its address.
+	Logging in spring boot comes from starter POM spring-boot-starter-web.
+
+Commit 3.
+
+	Add to .gitignore another eclipse file .springBeans
+	Add logback.xml and leave in there only loggers for the packages we have included so far.
 
 
