@@ -3,24 +3,26 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<groupId>org.springframework.boot</groupId>
+		<version>1.2.2.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
 	<groupId>com.mycompany.myapp</groupId>
 	<artifactId>jhipstripped</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>jhipstripped</name>
-	<description>Jhipster Step 1. Start a new boot app in Eclipse</description>
+	<description>Jhipster Step 1. Let's make a REST Controller</description>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.2.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+	<prerequisites>
+		<maven>3.0.0</maven>
+	</prerequisites>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<start-class>com.mycompany.myapp.JhipstrippedApplication</start-class>
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -29,16 +31,27 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.14</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
