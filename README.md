@@ -1,4 +1,4 @@
-Commit 1.
+Commit 1. STS Starter Spring Project
 	
 	Install STS in eclipse.
 	Go to File -> New -> Project.
@@ -11,7 +11,7 @@ Commit 1.
 		Package com.mycompany.myapp
 		Dependencies Web
 
-Commit 2.
+Commit 2. First Touch on STS Starter Project
 
 	Add a professional .gitignore file (copy from jhipster sample app folder)
 	Add a README.md file in root folder
@@ -21,12 +21,12 @@ Commit 2.
 	OK So far we have a rest controller in embedded Tomcat and we can alter its address.
 	Logging in spring boot comes from starter POM spring-boot-starter-web.
 
-Commit 3.
+Commit 3. Adding Logback
 
 	Add to .gitignore another eclipse file .springBeans
 	Add logback.xml and leave in there only loggers for the packages we have included so far.
 
-Commit 4.
+Commit 4. Adding Cool Maven Plugins and Profiles
 
 	In this commit we will add maven and spring profiles in order to have different logging levels.
 	But First Let's add some interesting Maven plugins :
@@ -70,6 +70,12 @@ Commit 4.
 		mvn -Pprod package or mvn -Pdev spring-boot:run
 		3) Add envinment variables on server
 		-Dspring.profiles.active=prod to your JAVA_OPTS
+
+Commit 5 Adding database support
+
+		1) For Each Profile Add two different configurations (MySQL and H2). Only used JDBC Template, JPA will be added later.
+		Two ways for pre-populating dbs BC Template execute.
+
 
 
 
