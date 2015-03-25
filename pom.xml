@@ -28,6 +28,7 @@
 		<maven-sortpom-plugin.version>2.3.0</maven-sortpom-plugin.version>
 		<sonar-maven-plugin.version>2.3</sonar-maven-plugin.version>
 		<run.addResources>false</run.addResources>
+        <HikariCP.version>2.2.5</HikariCP.version>		
 	</properties>
 
 	<dependencies>
@@ -57,7 +58,7 @@
 			<version>1</version>
 			<scope>compile</scope>
 		</dependency>
-		<!-- H2 -->
+		<!-- Database Support -->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -70,6 +71,25 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- Hikari CP Pooled Connections -->
+                <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${HikariCP.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>tools</artifactId>
+                    <groupId>com.sun</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- The HikariCP Java Agent is disabled by default, as it is experimental
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP-agent</artifactId>
+            <version>${HikariCP.version}</version>
+        </dependency>
+        -->
 	</dependencies>
 
 	<build>

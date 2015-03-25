@@ -76,6 +76,9 @@ Commit 5 Adding database support
 		1) For Each Profile Add two different configurations (MySQL and H2). Only used JDBC Template, JPA will be added later.
 		Two ways for pre-populating dbs BC Template execute.
 
-
+Commit 6 Pooled Connections to Database - Hikari CP
+		 
+		1) This commit we add Hikari CP.
+		2) We also added some tests so we make of the POM boot-starter-test.
 
 
